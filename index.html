@@ -1,250 +1,325 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nova — Stylish Animated Landing Page</title>
-  <meta name="description" content="A modern, stylish, and animated landing page template built with pure HTML, CSS, and a sprinkle of JS." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshita Kothari - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Decorative animated gradient background -->
-  <div class="bg-gradient"></div>
-  <div class="bg-blob bg-blob--one"></div>
-  <div class="bg-blob bg-blob--two"></div>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Harshita Kothari</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">WORKS</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top"><span class="logo">N</span> Nova</a>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#showcase">Showcase</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn--sm btn--ghost" href="#cta">Get Started</a>
-      </nav>
-      <button class="hamburger" aria-label="Open menu"><i class="ri-menu-3-line"></i></button>
-    </div>
-  </header>
-
-  <main>
     <!-- Hero Section -->
-    <section class="section hero" id="hero">
-      <div class="container grid grid--2cols align-center">
-        <div class="hero-copy reveal-up">
-          <p class="eyebrow">New • Creative • Fast</p>
-          <h1>Design bold experiences that stand out</h1>
-          <p class="subhead">Craft a stunning presence with delightful motion, clean typography, and glassy cards. Built with pure HTML, CSS, and a pinch of JavaScript.</p>
-          <div class="hero-cta">
-            <a class="btn btn--primary" href="#pricing"><i class="ri-rocket-2-fill"></i> Start Free</a>
-            <a class="btn btn--ghost" href="#showcase"><i class="ri-play-circle-line"></i> See it in action</a>
-          </div>
-          <div class="hero-stats">
-            <div><strong>5k+</strong><span>Happy Users</span></div>
-            <div><strong>120ms</strong><span>Avg. Load</span></div>
-            <div><strong>99.9%</strong><span>Uptime</span></div>
-          </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Harshita Kothari</h1>
+                <p>Hi, I am a Professional Developer and ICT Degree holder. I have five years experience in IT Sector as an ICT Lecturer, I'd like...</p>
+                <button class="btn-primary">Hire Me</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile-hero.jpg" alt="Harshita Kothari">
+            </div>
         </div>
-        <div class="hero-art reveal-up">
-          <div class="glass card-xl floating">
-            <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1200&auto=format&fit=crop" alt="Showcase" />
-            <div class="glass ribbon"><i class="ri-sparkling-2-line"></i> Live Preview</div>
-          </div>
-          <div class="glass badge"><i class="ri-magic-line"></i> Smooth Animations</div>
-          <div class="glass badge badge--alt"><i class="ri-shield-star-line"></i> Clean CSS</div>
-        </div>
-      </div>
     </section>
 
-    <!-- Features -->
-    <section class="section" id="features">
-      <div class="container">
-        <header class="section-head reveal-up">
-          <h2>Thoughtful features, elegant execution</h2>
-          <p>Carefully designed components to help you ship beautiful pages faster.</p>
-        </header>
-        <div class="grid grid--3cols features-grid">
-          <article class="feature glass reveal-up">
-            <i class="ri-quill-pen-line"></i>
-            <h3>Modern Typography</h3>
-            <p>"Inter" meets "Playfair" for a crisp, editorial look that’s readable and premium.</p>
-          </article>
-          <article class="feature glass reveal-up">
-            <i class="ri-layout-6-line"></i>
-            <h3>Responsive Grid</h3>
-            <p>Built on a fluid grid with CSS clamp() to adapt beautifully across devices.</p>
-          </article>
-          <article class="feature glass reveal-up">
-            <i class="ri-lightbulb-flash-line"></i>
-            <h3>Subtle Motion</h3>
-            <p>Delightful micro-interactions, hover effects, and scroll-reveal animations.</p>
-          </article>
-          <article class="feature glass reveal-up">
-            <i class="ri-shield-check-line"></i>
-            <h3>Accessible</h3>
-            <p>Semantic HTML, sufficient contrast, focus states, and reduced-motion support.</p>
-          </article>
-          <article class="feature glass reveal-up">
-            <i class="ri-contrast-drop-2-line"></i>
-            <h3>Curated Palette</h3>
-            <p>Soft gradients meet vibrant accents. Tweak CSS variables to re-skin instantly.</p>
-          </article>
-          <article class="feature glass reveal-up">
-            <i class="ri-code-line"></i>
-            <h3>Pure Frontend</h3>
-            <p>No build tools required. Open index.html and you’re live.</p>
-          </article>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="OIP.jpg" alt="About Harshita">
+                </div>
+                <div class="about-text">
+                    <h2>ABOUT ME</h2>
+                    <p class="about-subtitle">I Am Developer blends expertise with industry know-how to guide your next property development.</p>
+                    <p>Software Developers use software development languages and tools to write, edit, maintain, and test computer software. Software Developers follow the software development lifecycle (SDLC) to plan, design, build, test, and deploy software applications, ranging from websites and mobile applications to web applications and video games. In addition to creating new software, Software Developers improve and maintain the working order of existing software.</p>
+                    <a href="files/Resume.pdf" download="Harshita_Kothari_Resume.pdf" target="_blank" rel="noopener" class="btn-secondary">DOWNLOAD RESUME</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Showcase -->
-    <section class="section section--alt" id="showcase">
-      <div class="container">
-        <header class="section-head reveal-up">
-          <h2>Showcase your best work</h2>
-          <p>A flexible gallery with hover zoom and soft shadows.</p>
-        </header>
-        <div class="masonry">
-          <div class="tile reveal-up"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec2cfb1?q=80&w=1200&auto=format&fit=crop" alt="Gallery item" /></div>
-          <div class="tile reveal-up"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop" alt="Gallery item" /></div>
-          <div class="tile reveal-up"><img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1200&auto=format&fit=crop" alt="Gallery item" /></div>
-          <div class="tile reveal-up"><img src="https://images.unsplash.com/photo-1515879128298-4f1f1a15f19f?q=80&w=1200&auto=format&fit=crop" alt="Gallery item" /></div>
-          <div class="tile reveal-up"><img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=1200&auto=format&fit=crop" alt="Gallery item" /></div>
-          <div class="tile reveal-up"><img src="https://images.unsplash.com/photo-1517106635571-1b6982e66f66?q=80&w=1200&auto=format&fit=crop" alt="Gallery item" /></div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">MY SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern websites using latest technologies and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Building cross-platform mobile applications for iOS and Android devices.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and user-friendly interfaces with modern design principles.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Design</h3>
+                    <p>Designing and optimizing database structures for efficient data management.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section" id="testimonials">
-      <div class="container">
-        <header class="section-head reveal-up">
-          <h2>Loved by creators</h2>
-          <p>What designers and founders say about Nova.</p>
-        </header>
-        <div class="grid grid--3cols testimonials">
-          <figure class="testimonial glass reveal-up">
-            <blockquote>“The animations are tasteful and the layout is ultra-clean. Perfect for quick MVPs.”</blockquote>
-            <figcaption>
-              <img src="https://i.pravatar.cc/80?img=12" alt="Avatar" />
-              <div><strong>Riya Kapoor</strong><span>Product Designer</span></div>
-            </figcaption>
-          </figure>
-          <figure class="testimonial glass reveal-up">
-            <blockquote>“No frameworks, no fuss. I customized colors in two minutes. Looks premium.”</blockquote>
-            <figcaption>
-              <img src="https://i.pravatar.cc/80?img=32" alt="Avatar" />
-              <div><strong>Arjun Mehta</strong><span>Indie Hacker</span></div>
-            </figcaption>
-          </figure>
-          <figure class="testimonial glass reveal-up">
-            <blockquote>“The glass cards and hover states feel so slick. Great defaults for visuals.”</blockquote>
-            <figcaption>
-              <img src="https://i.pravatar.cc/80?img=45" alt="Avatar" />
-              <div><strong>Sara Ali</strong><span>Frontend Dev</span></div>
-            </figcaption>
-          </figure>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">MY SKILLS</h2>
+            <div class="skills-content">
+                <div class="skills-text">
+                    <p>Here are some of my key technical skills and areas of expertise that I've developed over my 5+ years in the industry.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Database Management</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="section section--alt" id="pricing">
-      <div class="container">
-        <header class="section-head reveal-up">
-          <h2>Simple, fair pricing</h2>
-          <p>Start free. Upgrade when you’re ready.</p>
-        </header>
-        <div class="grid grid--3cols pricing">
-          <div class="price-card glass reveal-up">
-            <h3>Starter</h3>
-            <p class="price">$0<span>/mo</span></p>
-            <ul>
-              <li><i class="ri-check-line"></i> 1 Project</li>
-              <li><i class="ri-check-line"></i> Community Support</li>
-              <li><i class="ri-check-line"></i> Basic Components</li>
-            </ul>
-            <a class="btn btn--ghost" href="#cta">Try Free</a>
-          </div>
-          <div class="price-card price-card--pro glass reveal-up">
-            <div class="label">Popular</div>
-            <h3>Pro</h3>
-            <p class="price">$12<span>/mo</span></p>
-            <ul>
-              <li><i class="ri-check-line"></i> Unlimited Projects</li>
-              <li><i class="ri-check-line"></i> Priority Support</li>
-              <li><i class="ri-check-line"></i> Full Component Library</li>
-            </ul>
-            <a class="btn btn--primary" href="#cta">Get Pro</a>
-          </div>
-          <div class="price-card glass reveal-up">
-            <h3>Team</h3>
-            <p class="price">$29<span>/mo</span></p>
-            <ul>
-              <li><i class="ri-check-line"></i> 10 Team Members</li>
-              <li><i class="ri-check-line"></i> Collaboration Tools</li>
-              <li><i class="ri-check-line"></i> Private Support</li>
-            </ul>
-            <a class="btn btn--ghost" href="#cta">Start Team</a>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">MY WORKS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A full-stack e-commerce platform built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>An interactive weather dashboard that provides real-time weather data, forecasts, and beautiful visualizations for multiple cities.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API Integration</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="container">
-        <header class="section-head reveal-up">
-          <h2>Frequently asked questions</h2>
-          <p>Quick answers to help you get started faster.</p>
-        </header>
-        <details class="faq glass reveal-up">
-          <summary><span>Is this template beginner-friendly?</span><i class="ri-add-line"></i></summary>
-          <p>Yes. It uses only HTML, CSS, and a tiny bit of JS. It’s a perfect project to learn layout, spacing, and animations.</p>
-        </details>
-        <details class="faq glass reveal-up">
-          <summary><span>Can I customize the colors and fonts?</span><i class="ri-add-line"></i></summary>
-          <p>Absolutely. Update CSS variables under :root to instantly re-theme.</p>
-        </details>
-        <details class="faq glass reveal-up">
-          <summary><span>Does it support reduced motion?</span><i class="ri-add-line"></i></summary>
-          <p>Yes. Motion is toned down automatically for users who prefer reduced motion.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="section cta" id="cta">
-      <div class="container grid grid--2cols align-center">
-        <div class="cta-copy reveal-up">
-          <h2>Ready to build your own landing page?</h2>
-          <p>Clone this starter, tweak the palette, and publish. It’s that simple.</p>
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">RESUME</h2>
+            <div class="resume-content">
+                <div class="resume-text">
+                    <h3>Download My Resume</h3>
+                    <p>Get a detailed overview of my professional experience, education, and skills. My resume includes my complete work history, technical expertise, and achievements in the field of software development.</p>
+                    <a href="files/Resume.pdf" download="Harshita_Kothari_Resume.pdf" target="_blank" rel="noopener" class="btn-primary">
+                        <i class="fas fa-download"></i> Download Resume (PDF)
+                    </a>
+                </div>
+                <div class="resume-preview">
+                    <div class="resume-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h4>Harshita Kothari</h4>
+                        <p>Professional Developer Resume</p>
+                        <span>PDF Format</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form class="cta-form glass reveal-up" onsubmit="event.preventDefault(); alert('Welcome aboard! 🎉');">
-          <label for="email" class="sr-only">Email</label>
-          <input id="email" name="email" type="email" placeholder="Enter your email" required />
-          <button class="btn btn--primary" type="submit"><i class="ri-send-plane-2-line"></i> Join Free</button>
-        </form>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Nova. Crafted with ❤️ for learners and makers.</p>
-      <div class="socials">
-        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
-        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-        <a href="#" aria-label="Github"><i class="ri-github-line"></i></a>
-      </div>
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT ME</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>896XXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:harshitakothari2703@gmail.com">harshitakothari2703@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mandsaur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="main.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Harshita Kothari. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/harshita-kothari-185a34321" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Harshita-kothari" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
